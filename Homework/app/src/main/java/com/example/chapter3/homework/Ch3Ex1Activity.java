@@ -44,6 +44,9 @@ public class Ch3Ex1Activity extends AppCompatActivity {
                 // 提示1：可以参考 https://airbnb.io/lottie/#/android?id=custom-animators
                 // 提示2：SeekBar 的文档可以把鼠标放在 OnProgressChanged 中间，并点击 F1 查看，
                 // 或者到官网查询 https://developer.android.google.cn/reference/android/widget/SeekBar.OnSeekBarChangeListener.html#onProgressChanged(android.widget.SeekBar,%20int,%20boolean
+                float temp_progress=((float)progress)/100;
+                animationView.setProgress(temp_progress);
+                System.out.println(temp_progress);
             }
 
             @Override
